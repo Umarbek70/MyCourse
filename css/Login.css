@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+/* MAIN BOX */
+
+.log_box{
+    width: 100%;
+    height: 100vh;      /* >>> FULL SCREEN HEIGHT */
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    border-radius: 0;   /* Fullscreen bo‘lganda radius shart emas */
+    overflow: hidden;
+}
+
+/* LEFT IMAGE SECTION */
+
+.log_left_box{
+    width: 50%;          /* >>> EXACT 50% */
+    height: 100%;
+}
+
+.Log-Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RIGHT LOGIN SECTION */
+
+.log_right_box{
+    width: 50%;           /* >>> EXACT 50% */
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Formani markazga keltiradi */
+}
+
+.right_container{
+    width: 80%;
+    text-align: center;
+}
+
+/* Inputs */
+
+.right_inputs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    width: 90%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* BUTTONS */
+
+button{
+   
+    width: 90%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.login_btn{
+    background: #3DCBB1;
+    color: #fff;
+    border: none;
+}
+
+/* SOCIAL BUTTONS */
+
+.Fb_btn{ background: #1877F2; color: #fff; border: none; }
+.Ap_btn{ background: #000; color: #fff; border: none; }
+.Gl_btn{ background: #fff; color: #000; border: 1px solid #ddd; }
+
+/* BOTTOM */
+
+.right-end{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.btn_subtt{
+    color: #3DCBB1;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ------------------------------- */
+/* RESPONSIVE */
+/* ------------------------------- */
+
+@media(max-width: 900px){
+
+    .log_box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .log_left_box{
+        width: 100%;
+        height: 40vh;   /* Mobilga mos rasm balandligi */
+    }
+
+    .log_right_box{
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+}
+
+@media(max-width: 500px){
+    input,
+    button{
+        width: 95%;
+    }
+}
+
+/* Oldingi kodlar shu yerda qoladi... */
+
+/* Responsive */
+
+/* Katta ekranlar uchun (desktop, planshet katta) */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .courses-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* O‘rta ekranlar (planshetlar va kichik desktoplar) */
+@media (max-width: 900px) {
+  .hero-section {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .course-search {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .course-search label {
+    flex: 1 1 100%;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .tab {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Kichik ekranlar (mobil telefonlar) */
+@media (max-width: 600px) {
+  .hero-section {
+    height: 250px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-form {
+    max-width: 100%;
+    margin: 0.75rem 0 1rem 0;
+  }
+
+  .header-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .course-search {
+    gap: 0.5rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .tab {
+    flex: 1 1 auto;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Eng kichik ekranlar (max 400px) */
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .header-buttons .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .search-form input[type="search"] {
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+}

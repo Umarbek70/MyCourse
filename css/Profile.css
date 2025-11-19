@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background: #f6f6f6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.account-container{
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    padding: 40px 30px 80px 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+}
+
+.page-title{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Tabs */
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tab{
+    background: none;
+    border: none;
+    font-size: 17px;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #555;
+    transition: 0.2s;
+}
+
+.tab:hover{
+    color: #00bb96;
+}
+
+.tab.active{
+    color: #00bb96;
+    border-bottom: 2px solid #00bb96;
+}
+
+/* Profile Section */
+.profile-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-img-box{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.profile-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-img-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #00bb96;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.profile-form{
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input,
+.form-group select{
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color: #00bb96;
+}
+
+/* Save Button */
+.save-btn{
+    width: 160px;
+    padding: 12px 0;
+    background: #00bb96;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 25px auto 0 auto;
+    display: block;
+    transition: 0.2s;
+}
+
+.save-btn:hover{
+    background: #009d7b;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .page-title{
+        font-size: 24px;
+    }
+
+    .tabs{
+        gap: 15px;
+    }
+
+    .tab{
+        font-size: 15px;
+    }
+
+    .profile-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .save-btn{
+        width: 140px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px){
+    .account-container{
+        padding: 25px 20px;
+    }
+
+    .page-title{
+        font-size: 22px;
+    }
+
+    .tab{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .form-group input,
+    .form-group select{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .save-btn{
+        width: 120px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MyCourse UI</title>
+<link rel="stylesheet" href="Search.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="../css/Search.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+        <div class="logo">
+            <div class="logo-circle"></div> MyCourse.io
+        </div>
+
+        <div class="browse">
+            Browse <i class="fa fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-search">
+        <input type="text" placeholder="Search for course">
+        <i class="fa fa-times close-search"></i>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+
+        <p class="instructor-btn">Become Instructor</p>
+
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-bell"></i>
+
+        <!-- PROFILE -->
+        <div class="profile-box">
+            
+
+   <div class="profile-box">
+
+    <!-- HIDDEN CHECKBOX (toggle) -->
+    <input type="checkbox" id="profileToggle" class="profile-toggle">
+
+    <!-- PROFILE IMAGE -->
+    <label for="profileToggle">
+        <img src="../img/profile.png" class="profile-img" alt="profile">
+    </label>
+
+    <!-- DROPDOWN -->
+    <div class="profile-dropdown">
+        <div class="pd-header">
+            <strong>Jonathan Doe</strong>
+            <p>doe.jonathan@email.com</p>
+        </div>
+
+        <ul>
+            <li> <a href="../html/Profile.html">My Courses </a>  </li>
+            <li>My Cart</li>
+            <li>Wishlist</li>
+            <li>Notifications</li>
+            <li>Account Settings</li>
+        </ul>
+
+        <div class="logout"> <a href="../html/Login.html">Logout</a></div>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- PAGE LAYOUT -->
+<div class="container">
+
+    <!-- FILTER PANEL -->
+    <div class="filter-box">
+        <div class="filter-title">
+            Filter <span class="clear-btn">Clear</span>
+        </div>
+
+        <div class="filter-item">
+            <h4>Rating</h4>
+            <label><input type="checkbox"> ⭐⭐⭐⭐⭐ (5.8K)</label>
+            <label><input type="checkbox"> ⭐⭐⭐⭐ (9.8K)</label>
+            <label><input type="checkbox"> ⭐⭐⭐ (887)</label>
+        </div>
+
+        <div class="filter-item">
+            <h4>Video Duration</h4>
+            <label><input type="checkbox"> 0–2 Hours (4.9K)</label>
+            <label><input type="checkbox"> 3–5 Hours (3.5K)</label>
+            <label><input type="checkbox"> 6–12 Hours (3.8K)</label>
+        </div>
+
+        <div class="filter-item">
+            <h4>Categories</h4>
+            <label><input type="checkbox"> Design (3.2K)</label>
+            <label><input type="checkbox"> Programming (1.4K)</label>
+            <label><input type="checkbox"> Finance (548)</label>
+        </div>
+
+        <div class="filter-item">
+            <h4>Level</h4>
+            <label><input type="checkbox"> All Levels</label>
+            <label><input type="checkbox"> Beginner</label>
+            <label><input type="checkbox"> Intermediate</label>
+            <label><input type="checkbox"> Advanced</label>
+        </div>
+    </div>
+
+    <!-- RESULTS SECTION -->
+    <div class="results">
+        <div class="results-header">
+            <p>Showing 2,312 results of <b>UI Design</b></p>
+            <div class="sort-box">Most Popular
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- COURSE GRID -->
+        <div class="grid">
+            <div class="card">
+                <img src="https://picsum.photos/400/200" class="card-img">
+                <div class="card-content">
+                    <span class="badge">Best Seller</span>
+                    <h3 class="card-title">UI Design for Beginners</h3>
+                    <p class="card-sub">Adobe Illustrator Scratch Course</p>
+                    <div>
+                        <span class="price">$24.92</span>
+                        <span class="old-price">$32.90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/401/200" class="card-img">
+                <div class="card-content">
+                    <span class="badge">Best Seller</span>
+                    <h3 class="card-title">Mobile Dev React Native</h3>
+                    <p class="card-sub">Bootcamp Vue.js Web Framework</p>
+                    <div>
+                        <span class="price">$24.92</span>
+                        <span class="old-price">$32.90</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/402/200" class="card-img">
+                <div class="card-content">
+                    <span class="badge">Best Seller</span>
+                    <h3 class="card-title">Design Fundamentals</h3>
+                    <p class="card-sub">Adobe Illustrator Stretch Course</p>
+                    <div>
+                        <span class="price">$24.92</span>
+                        <span class="old-price">$32.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <div>1</div><div class="active">2</div><div>3</div>
+            <div>4</div><div>5</div><div>...</div><div>98</div>
+        </div>
+
+
+            <!-- PROMO BANNER -->
+        <div class="promo-banner">
+            <div class="promo-text">
+                <h2>Join Klevr now to get 35% off</h2>
+                <p>
+                    With our responsive themes and mobile and desktop apps, enjoy a seamless
+                    experience on any device so will your blog the best visitors
+                </p>
+                <button class="btn-join">Join Klevr</button>
+            </div>
+            <div class="promo-img"></div>
+        </div>
+
+
+
+    </div>
+
+    
+</div>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <div class="logo-circle"></div> MyCourse.io
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <li>Web Programming</li>
+                        <li>Mobile Programming</li>
+                        <li>Java Beginner</li>
+                        <li>PHP Beginner</li>
+                    </ul>
+
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Design Logo</li>
+                    </ul>
+
+                    <ul>
+                        <li>Writing Course</li>
+                        <li>Photography</li>
+                        <li>Video Making</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © MyCourse.io 2024, All Rights Reserved</p>
+                <div class="footer-social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <script src="../JavaScript/Global.js"></script>
+
+
+</body>
+</html>
